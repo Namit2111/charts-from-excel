@@ -1,11 +1,11 @@
-// app.js
+
 const express = require('express');
 const fileRoutes = require('./routes/fileRoutes');
 const sheetsRoutes = require('./routes/sheetsRoutes');
-
+const cors = require('cors');
 const app = express();
 
-// Middleware for JSON parsing
+app.use(cors());
 app.use(express.json());
 
 // API routes
