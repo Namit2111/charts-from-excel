@@ -57,7 +57,7 @@ const parseCsvFile = (req, res, next) => {
 
       // Prepare response with chart data
       req.graphData = {
-        type: 'bar', // Specify graph type
+        type: ['bar','pie'], // Specify graph type
         data: {
           columns: columns,
           labels: labels,

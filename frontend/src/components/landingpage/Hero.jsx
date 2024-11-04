@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowRight,PieChart,BarChart,LineChart,Upload } from 'lucide-react';
+import { Link } from 'react-router-dom';
 const Hero = () => (
     <div className="pt-24 pb-16 bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4">
@@ -14,10 +15,12 @@ const Hero = () => (
               No coding required. Perfect for presentations, reports, and quick data analysis.
             </p>
             <div className="flex flex-wrap gap-4">
+              <Link to="/upload" className="inline-block">
               <button className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 flex items-center">
                 Start Converting
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
+              </Link>
               <button className="border border-gray-300 text-gray-700 px-6 py-3 rounded-md hover:bg-gray-50">
                 View Examples
               </button>
